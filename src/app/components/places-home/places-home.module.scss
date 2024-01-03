@@ -1,0 +1,10 @@
+.placescard {
+  position: relative;
+  margin: 2rem 0;
+
+  &__container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+}
