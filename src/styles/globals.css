@@ -2,11 +2,21 @@
 @import url("bootstrap-grid.css");
 
 :root {
-  --primary-color: hsla(197, 96%, 38%, 1);
-  --primary-color-hover: hsla(265, 34%, 55%, 0.8);
-  --primary-color-active: hsla(265, 35%, 44%, 1);
+  --primary-color: hsla(215, 100%, 22%, 1);
+  --primary-color-light: hsla(215, 100%, 27%, 1);
+  --primary-color-dark: hsla(215, 100%, 17%, 1);
+
+  --secondary-color: hsla(43, 100%, 50%, 1);
+  --secondary-color-light: hsla(43, 100%, 60%, 1);
+  --secondary-color-dark: hsla(43, 100%, 40%, 1);
+  
+  --alternative-color: hsla(14, 100%, 57%, 1);
+  --alternative-color-light: hsla(14, 100%, 61%, 1);
+  --alternative-color-dark: hsla(14, 100%, 47%, 1);
+
   --background-color: hsla(360, 100%, 100%, 1);
   --text-color: hsla(0, 0%, 0%, 0.8);
+
   --text-color-inverse: hsla(0, 0%, 100%, 1);
   --text-muted: hsla(0, 0%, 0%, 0.6);
   --border-color: hsla(0, 0%, 0%, 0.05);

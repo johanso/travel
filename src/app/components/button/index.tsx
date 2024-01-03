@@ -2,7 +2,7 @@ import Image from 'next/image'
 import styles from './button.module.scss'
 
 interface ButtonProps {
-  color: 'primary' | 'secondary' | 'alternative'
+  color: 'primary' | 'secondary' | 'dark' | 'light'
   text: string
   size?: "small" | "large" | "medium"
   icon?: string  

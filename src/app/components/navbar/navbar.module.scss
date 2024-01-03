@@ -40,9 +40,10 @@
   &__li {
     a {
       color: var(--text-color);
+      transition: all .2s;
       &:focus, &:hover, &:active {
         text-decoration: none;
-        color: var(--primary-color);
+        color: var(--text-color-inverse);
       }
     }
   }
@@ -68,7 +69,11 @@
       display: none;
     }
   }
-  &__scrolled {
+  &[class*="down"] {
+    top: -63px;
+  }
+  &[class*="up"] {
     background-color: var(--background-color);
+    top: 0;
   }
 }

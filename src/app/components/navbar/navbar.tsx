@@ -1,5 +1,5 @@
 "use client"
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './navbar.module.scss'
@@ -9,21 +9,29 @@ import Button from '../button'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<Boolean>(false)
-  const [scrollNav, setscrollNav] = useState<Boolean>(false);
+  const [prevScrollPos, setPrevScrollPos] = useState<number>(0);
+  const [userScrollPos, setUserScrollPos] = useState<string>('');
+  const navbarRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY < 10) {
-        setscrollNav(false)
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      if (prevScrollPos > currentScrollPos) {
+        setUserScrollPos(currentScrollPos === 0 ? '' : 'up');
       } else {
-        setscrollNav(true)
+        setUserScrollPos('down');
       }
-    });
-    return () => window.removeEventListener('scroll', () => {})
-  }, [])
+      setPrevScrollPos(currentScrollPos);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [prevScrollPos]);
+
 
   return (
-    <nav className={`${styles.navbar} ${scrollNav ? styles.navbar__scrolled : 'no'}`}>
+    <nav 
+      ref={navbarRef} 
+      className={`${styles.navbar} ${userScrollPos} `}>
       <div className={`${styles.navbar__container} container`}>
         <div className={styles.navbar__logo}>
           <Link href="/">
@@ -45,7 +53,7 @@ const Navbar = () => {
             ))
           }           
           <li className={styles.navbar__button}>
-            <Button color="primary" text="Login" icon={'/person.svg'} />
+            <Button color="dark" text="Login" icon={'/person.svg'} />
           </li>
         </ul>
         <div 

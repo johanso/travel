@@ -2,13 +2,20 @@
 import styles from './hero.module.scss'
 import Button from "../button";
 import { IconStar } from '../icons';
+import PlatformLogos from '../platform-logos';
 
 const Hero = () => {
   return (
     <header className={styles.hero}>
       <div className="container">
-        <h1 className={styles.hero__title}>Travel Bookings</h1>
-        <h2 className={styles.hero__subtitle}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nesciunt, hic tempore, voluptates iusto ex incidunt nobis minus doloremque... </h2>
+        <div className={styles.hero__info}>
+          <h1 className={styles.hero__title}>Descubre el Encanto <br /> de San Andrés</h1>
+          <h2 className={styles.hero__subtitle}>Explora Estancias Inolvidables en los Mejores Hoteles de Nuestra Isla Caribeña. ¡Reserva Ahora y Vive el Paraíso!</h2>
+        </div>
+        <div className={styles.hero__button}>
+          <Button color="primary" size={"large"} text="Download App" />
+          <Button color="secondary" size={"large"} text="Download App" />
+        </div>
         <div className={styles.hero__features}>
           <div className={styles.hero__features_stars}>
             <IconStar size={16} color="#ffb900" />
@@ -23,11 +30,10 @@ const Hero = () => {
             <p className={styles.hero__features_text}><strong>500M+</strong> Downloads</p>
           </div>
         </div>
-        <div className={styles.hero__button}>
-          <Button color="alternative" size={"large"} text="Download App" />
-        </div>
+        
         <div className={styles.hero__iconscroll}></div>
       </div>
+      <PlatformLogos />
     </header>
   )
 }
