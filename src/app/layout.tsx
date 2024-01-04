@@ -5,7 +5,7 @@ import Navbar from './components/navbar/navbar'
 
 const cairo = Cairo({
   subsets: ['latin'],
-  weight: ['400', '700'],
+  weight: ['300', '400', '700'],
   variable: "--Cairo",
   display: 'swap',
 });

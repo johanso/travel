@@ -36,12 +36,15 @@ const Navbar = () => {
         <div className={styles.navbar__logo}>
           <Link href="/">
             <Image
-              src="/logo.svg"
+              src="/logo.png"
               alt="logo"
               width={100}
               height={32}
               priority
             />
+            <span className={styles.navbar__logo_text}>
+              <span>Reservas</span> San Andres
+            </span>
           </Link>
         </div>
         <ul className={`${styles.navbar__ul} ${isMenuOpen ? styles.navbar__ul_mobile : ''}`}>
