@@ -1,13 +1,12 @@
 import type { Metadata } from 'next'
-import { Inter, Poppins } from 'next/font/google'
+import { Inter, Cairo } from 'next/font/google'
 import '../styles/globals.css'
 import Navbar from './components/navbar/navbar'
 
-
-const poppins = Poppins({
+const cairo = Cairo({
   subsets: ['latin'],
-  weight: ['600', '700'],
-  variable: "--Poppins",
+  weight: ['400', '700'],
+  variable: "--Cairo",
   display: 'swap',
 });
 const inter = Inter({ 
@@ -29,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${poppins.variable}`}>
+      <body className={`${inter.variable} ${cairo.variable}`}>
         <Navbar />
         {children}
       </body>
