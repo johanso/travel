@@ -1,14 +1,16 @@
 .placeinfo {
   position: relative;
   background-color: var(--primary-color);
-  padding: 2rem;
-  margin: 2rem 1rem;
+  margin: 2rem -2rem;
+  padding: 2rem 4rem;
   border-radius: 0.75rem;
   @media (min-width: 992px) {
-    width: 40rem;
-    right: 5rem;
     position: absolute;
     bottom: -7rem;
+    margin: 2rem 1rem;
+    padding: 2rem;
+    width: 40rem;
+    right: 5rem;
   }
   &__title {
     color: var(--text-color-inverse);

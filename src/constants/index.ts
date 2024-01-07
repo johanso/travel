@@ -40,14 +40,14 @@ export const PLATFORM_LOGOS = [
 export const FEATURES_APP = [
   {
     title: "Reservas Seguras",
-    description: "Tu seguridad es nuestra prioridad. Realiza reservas con total confianza sabiendo que tus datos están protegidos en nuestras reservas seguras.",
+    description: "Tu seguridad es nuestra prioridad. Realiza reservas con total confianza sabiendo que tus datos están protegidos.",
     src: "/icons/check-circle.svg",
     alt: "icon check",
     key: "02"
   },
   {
     title: "Ofertas Exclusivas",
-    description: "Descubre ofertas exclusivas al reservar a través de nosotros. Desde descuentos especiales hasta beneficios adicionales, aseguramos que obtengas el mejor trato.",
+    description: "Descubre ofertas exclusivas al reservar a través de nosotros. Desde descuentos especiales hasta beneficios adicionales.",
     src: "/icons/cup-star.svg",
     alt: "icon ofertas",
     key: "03"
@@ -61,21 +61,21 @@ export const FEATURES_APP = [
   },
   {
     title: "Comentarios y Valoraciones",
-    description: "Confía en las experiencias reales de otros viajeros. Lee comentarios y valoraciones para tomar decisiones informadas sobre tu elección de alojamiento.",
+    description: "Confía en las experiencias reales de otros viajeros. Lee comentarios y valoraciones para tomar decisiones sobre tus viajes.",
     src: "/icons/chat-round-check.svg",
     alt: "icon valoraciones",
     key: "05"
   },
   {
     title: "Soporte al Cliente",
-    description: "Estamos aquí para ayudarte. Nuestro equipo de soporte al cliente está disponible para responder a tus preguntas y brindarte asistencia en cualquier momento.",
+    description: "Estamos aquí para ayudarte. Nuestro equipo de soporte al cliente está disponible para responder a tus preguntas y brindarte asistencia.",
     src: "/icons/dialog.svg",
     alt: "icon soporte",
     key: "06"
   }, 
   {
     title: "Proceso de Reserva Sencillo",
-    description: "Simplificamos el proceso de reserva para que puedas concentrarte en disfrutar de tu estancia. Desde la selección hasta la confirmación, todo es rápido y sencillo.",
+    description: "Simplificamos el proceso de reserva para que puedas concentrarte en disfrutar de tu estancia. Desde la selección hasta la confirmación.",
     src: "/icons/smile-circle.svg",
     alt: "icon proceso",
     key: "08"

@@ -56,7 +56,7 @@ const PlacesCard = () => {
   return (
     <section className={styles.placescard}>
       <div className={`${styles.placescard__header} container`}>
-        <h2 className="section-title">Places you must visit</h2>
+        <h2 className="section-title"><strong>Explora</strong> San Andrés</h2>
         <div className='placescard-buttons'>
           <button className='button' onClick={() => onHandleRightOrLeftScroll('left')} aria-hidden="true">
             <IconArrowLeft color={configCarrousel.left ? 'var(--text-color)' : 'var(--text-disabled)'} size={18} />

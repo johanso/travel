@@ -8,7 +8,7 @@ const Features = () => {
     <section className={styles.features}>
 
       <div className='container'>
-        <h2 className="section-title">Reserva con Ventajas Exclusivas</h2>
+        <h2 className="section-title"><strong>Reserva</strong> con Ventajas Exclusivas</h2>
 
         <div className={styles.features__cards}>
           {
@@ -22,7 +22,11 @@ const Features = () => {
               </div>
             ))
           }
+          <div className={styles.features__app}>
+            <Image src="/image-app.png" alt="app movil" height={600} width={400} />
+          </div>
         </div>
+
       </div>
 
     </section>
