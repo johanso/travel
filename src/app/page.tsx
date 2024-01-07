@@ -1,3 +1,4 @@
+import FeaturedAcommodations from './components/featured-accommodations'
 import Features from './components/features'
 import Hero from './components/hero'
 import PlacesCard from './components/places-home'
@@ -7,9 +8,9 @@ export default function Home() {
   return (
     <main className={`${styles.main}`}>
       <Hero />
+      <FeaturedAcommodations />
       <PlacesCard />
       <Features />
-      <p>aas</p>
       <p>aas</p>
       <p>aas</p>
       <p>aas</p>

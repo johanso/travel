@@ -1,5 +1,4 @@
 import { FEATURES_APP } from '@/constants'
-import { IconStar } from '../icons'
 import styles from './features.module.scss'
 import Image from 'next/image'
 
