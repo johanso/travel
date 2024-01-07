@@ -1,6 +1,6 @@
 import { useRef, useState, useLayoutEffect } from 'react';
 
-const useCarrousel = () => {
+const useCarrousel = (datatype: string) => {
   const [configCarrousel, setConfigCarrousel] = useState({
     right: false,
     left: false
@@ -41,7 +41,7 @@ const useCarrousel = () => {
     const { current: carrousel } = containerCarrousel;
 
     if (carrousel) {
-      const elements = Array.from(carrousel.querySelectorAll('[data-type="carrusel-place"]'));
+      const elements = Array.from(carrousel.querySelectorAll(`[data-type=${datatype}]`));
 
       if (elements.length >= 2) {
         const [firstElement, secondElement] = elements;

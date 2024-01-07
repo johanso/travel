@@ -1,0 +1,13 @@
+.cardAcommodation {
+  width: 21rem;
+  scroll-snap-align: center;
+  &__header {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    margin-bottom: 0.75rem;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

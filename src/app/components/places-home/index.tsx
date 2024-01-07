@@ -7,7 +7,7 @@ import useCarrousel from '@/hooks/useCarrousel'
 
 const PlacesCard = () => {
   
-  const { configCarrousel, containerCarrousel, onHandleRightOrLeftScroll } = useCarrousel();
+  const { configCarrousel, containerCarrousel, onHandleRightOrLeftScroll } = useCarrousel('carrusel-place');
 
   return (
     <section className={styles.placescard}>
@@ -22,10 +22,7 @@ const PlacesCard = () => {
           </button>
         </div>
       </div>
-      <div 
-        id='carrousel-places'
-        className={styles.placescard__container} 
-        ref={containerCarrousel}>
+      <div className={styles.placescard__container} ref={containerCarrousel}>
         <PlaceCard 
           image="/hero-1.jpg"
           title="San Andres 1"
