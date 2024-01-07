@@ -36,3 +36,25 @@ export const IconLocation: React.FC<IconProps> = ({size = 16, color = 'currentCo
     </svg>
   )
 }
+
+export const IconQuote: React.FC<IconProps> = ({size = 16, color = 'currentColor'}) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill={color} className="bi bi-quote" viewBox="0 0 16 16">
+      <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+    </svg>
+  )
+}
+export const IconArrowRight: React.FC<IconProps> = ({size = 16, color = 'currentColor'}) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill={color} className="bi bi-arrow-right" viewBox="0 0 16 16">
+      <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+    </svg>
+  )
+}
+export const IconArrowLeft: React.FC<IconProps> = ({size = 16, color = 'currentColor'}) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill={color} className="bi bi-arrow-left" viewBox="0 0 16 16">
+      <path fillRule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+    </svg>
+  )
+}

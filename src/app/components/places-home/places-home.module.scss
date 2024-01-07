@@ -13,8 +13,34 @@
     padding-inline-end: 2rem;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
+    transition: scroll-left 1s ease;
     &::-webkit-scrollbar {
       display: none;
+    }
+    @media (min-width: 992px) {
+      scroll-padding-inline-start: 2rem;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    position: relative;
+    [class^="placescard-buttons"] {
+      display: flex;
+      align-items: center;
+      gap: .25rem;
+      [class*="button"] {
+        border: none;
+        background: transparent;
+        line-height: 0;
+        cursor: pointer;
+        &:focus, &:active {
+          outline: none;
+        }
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 .placecard {
   position: relative;
-  height: 22rem;
+  height: 18rem;
   background-position: center;
   background-size: cover;
   padding: 2rem;
@@ -12,10 +12,11 @@
     width: 60vw;
   }
   @media (min-width: 992px) {
-    width: 40vw;
+    width: 28rem;
+    scroll-snap-align: start;
   }
   @media (min-width: 1200px) {
-    width: 36vw;
+    width: 35rem;
   }
   &::before {
     content: '';
