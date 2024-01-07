@@ -42,19 +42,16 @@ const PlacesCard = () => {
     }
   }
 
-  const handleScroll = () => {
-    const { current: carrousel } = containerCarrousel
-
+  const handleScroll = (): void => {
+    const { current: carrousel } = containerCarrousel;
+  
     if (carrousel) {
-      const right = carrousel.scrollLeft < carrousel.scrollWidth - carrousel.offsetWidth
+      const right = carrousel.scrollLeft < carrousel.scrollWidth - carrousel.offsetWidth;
       const left = carrousel.scrollLeft > 0;
-      setConfigCarrousel({
-        ...configCarrousel,
-        right,
-        left
-      })
+      setConfigCarrousel({ right, left });
     }
-  }
+  };
+  
 
   return (
     <section className={styles.placescard}>

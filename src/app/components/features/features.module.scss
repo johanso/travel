@@ -1,0 +1,27 @@
+.features {
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    overflow: hidden;
+  }
+  &__card {
+    position: relative;
+  }
+  &__card_icon {
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    width: 3.5rem;
+  }
+  &__card_title {
+    font-size: 1.3rem;
+    line-height: 2;
+    margin-bottom: 1rem;
+    padding-left: 4rem;
+  }
+}

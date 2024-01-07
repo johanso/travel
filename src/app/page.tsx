@@ -1,3 +1,4 @@
+import Features from './components/features'
 import Hero from './components/hero'
 import PlacesCard from './components/places-home'
 import styles from './page.module.css'
@@ -7,7 +8,7 @@ export default function Home() {
     <main className={`${styles.main}`}>
       <Hero />
       <PlacesCard />
-      <p>aas</p>
+      <Features />
       <p>aas</p>
       <p>aas</p>
       <p>aas</p>
