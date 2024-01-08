@@ -15,11 +15,12 @@
     font-size: 1.25rem;
     margin-bottom: .25rem;
   }
-  &__location {
+  &__location,
+  &__reputation {
     font-size: 0.875rem;
     display: flex;
     align-items: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     gap: 1rem;
     span {
       display: flex;
@@ -37,5 +38,26 @@
     position: absolute;
     right: 0.75rem;
     top: 0.75rem;
+    background: hsla(0deg, 0%, 100%, .1);
+    padding: 0.25rem 0.75rem;
+    border-radius: 25rem;
+  }
+  &__amenities {
+    border-top: 1px solid var(--border-color);
+  }
+  &__amenities_list {
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    padding: 0.5rem 0 0;
+  }
+  &__amenities_item {
+    font-size: 0.875rem;
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
   }
 }
