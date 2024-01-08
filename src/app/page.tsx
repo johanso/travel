@@ -1,3 +1,4 @@
+import DownloadApp from './components/download-app'
 import FeaturedAcommodations from './components/featured-accommodations'
 import Features from './components/features'
 import Hero from './components/hero'
@@ -11,13 +12,7 @@ export default function Home() {
       <FeaturedAcommodations />
       <PlacesCard />
       <Features />
-      <p>aas</p>
-      <p>aas</p>
-      <p>aas</p>
-      <p>aas</p>
-      <p>aas</p>
-      <p>aas</p>
-      <p>aas</p>
+      <DownloadApp />
     </main>
   )
 }

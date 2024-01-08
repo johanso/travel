@@ -1,23 +1,11 @@
 .placecard {
   position: relative;
-  height: 18rem;
+  height: 14rem;
   background-position: center;
   background-size: cover;
-  padding: 2rem;
-  width: 80vw;
-  scroll-snap-align: center;
+  padding: 1.5rem;
   border-radius: 0.75rem;
   overflow: hidden;
-  @media (min-width: 768px) {
-    width: 60vw;
-  }
-  @media (min-width: 992px) {
-    width: 28rem;
-    scroll-snap-align: start;
-  }
-  @media (min-width: 1200px) {
-    width: 35rem;
-  }
   &::before {
     content: '';
     position: absolute;
@@ -39,7 +27,7 @@
     position: absolute;
   }
   &__title {
-    font: 700 1.4rem/1.5rem var(--Cairo);
+    font: 700 1.3rem/1.5rem var(--Cairo);
     color: var(--text-color-inverse);
     padding-left: 4rem;
     position: relative;
