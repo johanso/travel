@@ -46,6 +46,7 @@ h1, h2, h3 {
 .section-title {
   font: 400 1.45rem/1.5 var(--Cairo);
   margin-bottom: 2rem; 
+  text-align: center;
   strong {
     font-weight: 700;
     color: var(--secondary-color);

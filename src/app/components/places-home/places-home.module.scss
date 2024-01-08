@@ -8,12 +8,18 @@
 
   &__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     position: relative;
     gap: 1.5rem;
   }
 
   &__header {
     position: relative;
+  }
+
+  &__button_more {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
   }
 }

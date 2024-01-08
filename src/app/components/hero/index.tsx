@@ -13,7 +13,7 @@ const Hero = () => {
           <h2 className={styles.hero__subtitle}>Explora Estancias Inolvidables en los Mejores Hoteles de Nuestra Isla Caribeña. ¡Reserva Ahora y Vive el Paraíso!</h2>
         </div>
         <div className={styles.hero__button}>
-          <Button color="primary" size={"large"} text="Elegir Alojamiento" />
+          <Button color="primary" size={"large"} text="Explorar Alojamientos" icon='/icons/arrow-right.svg'/>
         </div>
         <div className={styles.hero__features}>
           <div className={styles.hero__features_stars}>
