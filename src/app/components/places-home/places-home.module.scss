@@ -3,7 +3,7 @@
   margin: 2rem 0;
 
   @media (min-width: 992px) {
-    margin-bottom: 8rem;
+    padding-bottom: 2rem;
   }
 
   &__container {
@@ -13,8 +13,8 @@
     overflow: scroll;
     gap: 1.5rem;
     scroll-snap-type: x mandatory;
-    padding-inline-start: 2rem;
-    padding-inline-end: 2rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     scroll-behavior: smooth;

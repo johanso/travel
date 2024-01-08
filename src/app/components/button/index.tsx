@@ -11,8 +11,8 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({color, text, icon, size}) => {
   return (
     <button className={`${styles.btn} ${styles[`btn--${color}`]}`} data-size={size}>
-      {icon && <Image src={icon} alt="icon" height={18} width={18} />}
       {text}
+      {icon && <Image src={icon} alt="icon" height={18} width={18} />}
     </button>
   )
 }

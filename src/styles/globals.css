@@ -9,10 +9,14 @@
   --secondary-color: hsla(43, 100%, 50%, 1);
   --secondary-color-light: hsla(43, 100%, 60%, 1);
   --secondary-color-dark: hsla(43, 100%, 40%, 1);
+
+  --alternative-color: hsla(154, 71%, 36%, 100%);
+  --alternative-color-light: hsla(154, 71%, 41%, 1);
+  --alternative-color-dark: hsla(154, 71%, 26%, 1);
   
-  --alternative-color: hsla(14, 100%, 57%, 1);
-  --alternative-color-light: hsla(14, 100%, 61%, 1);
-  --alternative-color-dark: hsla(14, 100%, 47%, 1);
+  --alternative-color2: hsla(14, 100%, 57%, 1);
+  --alternative-color-light2: hsla(14, 100%, 61%, 1);
+  --alternative-color-dark2: hsla(14, 100%, 47%, 1);
 
   --background-color: hsla(360, 100%, 100%, 1);
   --text-color: hsla(0, 0%, 0%, 0.8);

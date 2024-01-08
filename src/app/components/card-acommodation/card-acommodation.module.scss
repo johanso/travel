@@ -1,13 +1,41 @@
 .cardAcommodation {
-  width: 21rem;
+  width: 24rem;
   scroll-snap-align: center;
   &__header {
     border-radius: 0.75rem;
     overflow: hidden;
     margin-bottom: 0.75rem;
+    position: relative;
     img {
       width: 100%;
       height: auto;
     }
+  }
+  &__title {
+    font-size: 1.25rem;
+    margin-bottom: .25rem;
+  }
+  &__location {
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    gap: 1rem;
+    span {
+      display: flex;
+      align-items: center;
+    }
+    svg {
+      margin-right: 0.5rem;
+    }
+  }
+  &__stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .25rem;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.75rem;
   }
 }
