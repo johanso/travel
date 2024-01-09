@@ -1,12 +1,21 @@
 import { useState } from 'react'
-import Image from 'next/image'
 import styles from './card-acommodation.module.scss'
 import Button from '../button'
-import { IconBellHotal, IconChatLeftText, IconCold, IconCup, IconDash, IconFamily, IconLocation, IconParking, IconPlus, IconRestaurant, IconSea, IconSmokeCigarette, IconStar, IconWifi } from '../icons'
+import { 
+  IconBellHotal, 
+  IconCold, 
+  IconCup, 
+  IconFamily, 
+  IconLocation, 
+  IconParking, 
+  IconRestaurant, 
+  IconSea, 
+  IconSmokeCigarette, 
+  IconStar, 
+  IconWifi } from '../icons'
+import ImageGallery from './components/image-gallery'
 
 const CardAcommodation = () => {
-
-  const [activeAmenities, setActiveAmenities] = useState<boolean>(false)
 
   return (
     <article className={styles.cardAcommodation} data-type='carrusel-acommodation'>
@@ -17,11 +26,10 @@ const CardAcommodation = () => {
           <IconStar size={14} color="#ffb900" />
           <IconStar size={14} color="#ffb900" />
         </div>
-        <Image src="/hero-1.jpg" alt="hero" width={200} height={250} />
+        <ImageGallery />
       </header>
       <div className={styles.cardAcommodation__content}>
-        <h3 className={styles.cardAcommodation__title}>Azure Lofts & Pool
-</h3>
+        <h3 className={styles.cardAcommodation__title}>Azure Lofts & Pool</h3>
 
         <div className={styles.cardAcommodation__qualification}>
           <div className='box'>8,7</div>
