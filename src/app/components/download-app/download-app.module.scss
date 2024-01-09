@@ -1,7 +1,7 @@
 .downloadApp {
   background: url(/bg-download-app.webp) var(--primary-color-light) no-repeat center bottom;
-  height: 32rem;
-  background-size: 70rem;
+  height: 34rem;
+  background-size: 36rem;
   margin-top: 2rem;
   padding-bottom: 2rem;
   @media (min-width: 768px) {
@@ -9,7 +9,8 @@
   }
   @media (min-width: 1200px) {
     height: 20rem;
-    background-position: 36vw bottom;
+    background-position: 45vw center;
+    background-size: 40rem;
   }
   &__header {
     text-align: center;
