@@ -39,7 +39,7 @@
   }
   &__li {
     a {
-      color: var(--text-color);
+      color: var(--text-color-inverse);
       transition: all .2s;
       &:focus, &:hover, &:active {
         text-decoration: none;
@@ -110,6 +110,9 @@
       span {
         color: var(--text-color);
       }
+    }
+    a {
+      color: var(--text-color);
     }
   }
 }
