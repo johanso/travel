@@ -1,0 +1,23 @@
+.post {
+
+  &__head {
+    display: flex;
+    height: 20vh;
+    background: tomato;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
+  &__body {
+    background-color: var(--text-color-inverse);
+    position: relative;
+    top: 20vh;
+    z-index: 1;
+  }
+  &__title {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    padding: 1rem 0;
+  }
+}
