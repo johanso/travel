@@ -7,12 +7,13 @@ interface PlaceCardProps {
   image: string
   title: string
   description: string
+  slug?: string
 }
 
-const PlaceCard: React.FC<PlaceCardProps> = ({image, title, description}) => {
+const PlaceCard: React.FC<PlaceCardProps> = ({image, title, description, slug}) => {
   return (
     <article data-type='carrusel-place' style={{backgroundImage: `url(${image})`}} className={styles.placecard}>
-      <Link href={`/lugares/post`}>
+      <Link href={`/lugares/${slug}`}>
         <div className={styles.placecard__icon}>
           <IconLocation color='var(--text-color)' size={24} />
         </div>

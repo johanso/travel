@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Cairo } from 'next/font/google'
-import '../styles/globals.css'
-import Navbar from './components/navbar/navbar'
+import '../../styles/globals.css'
+import Navbar from '../components/navbar/navbar'
 
 const cairo = Cairo({
   subsets: ['latin'],
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={`${inter.variable} ${cairo.variable}`}>
         <Navbar />
         {children}
